@@ -1,32 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitforge - Privacy Policy</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Bitforge Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Bitforge Software Solutions</h1>
-    <p>Your Trusted Partner in Software Innovation</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </nav>
-  <div class="container">
-    <section class="section">
-      <h2>Privacy Policy</h2>
-      <p>Last Updated: July 31, 2025</p>
-      <p>At Bitforge, we are committed to protecting your privacy. We collect personal information such as name and email only to provide our services and support. We do not share your data with third parties except as required by law. You can review or request deletion of your data by contacting us at support@bitforge.com.</p>
+<body class="bg-gray-100 text-gray-800 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-indigo-600">Bitforge</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="products.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <a href="privacy.html" class="text-indigo-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="py-20 bg-white pt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Privacy Policy</h2>
+            <div class="prose max-w-3xl mx-auto text-gray-600">
+                <h3>Introduction</h3>
+                <p>At Bitforge Software Solutions, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our website or services.</p>
+                
+                <h3>Information We Collect</h3>
+                <p>We may collect personal information such as your name, email address, and other details you provide when contacting us or using our services. We also collect non-personal information, such as browsing data, to improve our website and services.</p>
+                
+                <h3>How We Use Your Information</h3>
+                <p>Your information is used to provide and improve our services, respond to inquiries, and communicate updates about our products. We do not share your personal information with third parties except as required by law or to fulfill our services.</p>
+                
+                <h3>Data Security</h3>
+                <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security.</p>
+                
+                <h3>Your Rights</h3>
+                <p>You have the right to access, update, or delete your personal information. Please contact us at support@bitforge.com to exercise these rights.</p>
+                
+                <h3>Changes to This Policy</h3>
+                <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+                
+                <p><strong>Effective Date:</strong> August 12, 2025</p>
+                <p>If you have any questions about this Privacy Policy, please contact us at support@bitforge.com.</p>
+            </div>
+        </div>
     </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 Bitforge. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-  </footer>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Bitforge Software Solutions. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
