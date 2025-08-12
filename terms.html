@@ -1,32 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitforge - Terms of Service</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Bitforge Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Bitforge Software Solutions</h1>
-    <p>Your Trusted Partner in Software Innovation</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </nav>
-  <div class="container">
-    <section class="section">
-      <h2>Terms of Service</h2>
-      <p>Last Updated: July 31, 2025</p>
-      <p>By using Bitforge products, you agree to these terms. Our software is provided "as is" without warranties of any kind. You are granted a non-exclusive license to use our products for personal or business purposes. Unauthorized distribution or modification is prohibited. For refunds, contact us within 30 days of purchase.</p>
+<body class="bg-gray-100 text-gray-800 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-indigo-600">Bitforge</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="products.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Privacy Policy</a>
+                    <a href="terms.html" class="text-indigo-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Terms of Service Section -->
+    <section id="terms" class="py-20 bg-white pt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Terms of Service</h2>
+            <div class="prose max-w-3xl mx-auto text-gray-600">
+                <h3>Acceptance of Terms</h3>
+                <p>By accessing or using the services of Bitforge Software Solutions, you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.</p>
+                
+                <h3>Use of Services</h3>
+                <p>Our software solutions, including API integrations, plugins, and addon management tools, are provided for lawful purposes only. You agree not to use our services in any way that violates applicable laws or regulations.</p>
+                
+                <h3>Intellectual Property</h3>
+                <p>All content and software provided by Bitforge are protected by intellectual property laws. You may not reproduce, distribute, or modify our products without prior written consent.</p>
+                
+                <h3>Limitation of Liability</h3>
+                <p>Bitforge Software Solutions is not liable for any indirect, incidental, or consequential damages arising from the use of our services. Our liability is limited to the amount paid for the services.</p>
+                
+                <h3>Termination</h3>
+                <p>We reserve the right to terminate or suspend access to our services at our discretion, with or without notice, for conduct that violates these Terms of Service.</p>
+                
+                <h3>Changes to Terms</h3>
+                <p>We may update these Terms of Service periodically. Continued use of our services after changes constitutes acceptance of the new terms.</p>
+                
+                <p><strong>Effective Date:</strong> August 12, 2025</p>
+                <p>For questions about these Terms of Service, please contact us at support@bitforge.com.</p>
+            </div>
+        </div>
     </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 Bitforge. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-  </footer>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Bitforge Software Solutions. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
