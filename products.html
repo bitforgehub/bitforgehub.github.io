@@ -1,48 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitforge - Products</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Bitforge Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Bitforge Software Solutions</h1>
-    <p>Your Trusted Partner in Software Innovation</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-  </nav>
-  <div class="container">
-    <section class="section">
-      <h2>Our Products</h2>
-      <div class="product">
-        <h3>API Integration Suite</h3>
-        <p>Seamless API solutions designed to connect your systems effortlessly. Includes real-time data syncing, comprehensive documentation, and 24/7 support.</p>
-        <p><strong>Features:</strong> Multi-platform compatibility, scalable architecture, secure endpoints.</p>
-        <a href="#" class="btn">Buy Now - $99</a>
-      </div>
-      <div class="product">
-        <h3>Plugin Development Kit</h3>
-        <p>Create and deploy custom plugins to enhance your software applications. Ideal for developers seeking flexibility and performance.</p>
-        <p><strong>Features:</strong> Easy integration, extensive library, regular updates.</p>
-        <a href="#" class="btn">Buy Now - $79</a>
-      </div>
-      <div class="product">
-        <h3>Addon Manager Pro</h3>
-        <p>Streamline addon deployment and management with our intuitive dashboard. Perfect for businesses with complex software ecosystems.</p>
-        <p><strong>Features:</strong> Centralized control, automated updates, user-friendly interface.</p>
-        <a href="#" class="btn">Buy Now - $59</a>
-      </div>
+<body class="bg-gray-100 text-gray-800 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-indigo-600">Bitforge</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="products.html" class="text-indigo-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white pt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-xl font-semibold mb-4">API Integrations</h3>
+                    <p class="text-gray-600">Our robust API integration solutions enable seamless connectivity between your systems, enhancing efficiency and scalability for your business operations.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-xl font-semibold mb-4">Customizable Plugins</h3>
+                    <p class="text-gray-600">Enhance your software with our tailored plugins, designed to add powerful features and improve user experience with minimal setup.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-xl font-semibold mb-4">Addon Management Tools</h3>
+                    <p class="text-gray-600">Streamline your software ecosystem with our addon management tools, offering intuitive control and optimization for your applications.</p>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 Bitforge. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-  </footer>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-lg mb-6">Explore our products and see how Bitforge can drive your success through innovative software solutions.</p>
+            <a href="contact.html" class="inline-block bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg hover:bg-indigo-100 hover-scale">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Bitforge Software Solutions. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
